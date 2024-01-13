@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
             avatar.src = `${data.avatar_url}`;
     
             const username = document.createElement('span');
-            username.textContent = `${data.login}`;
+            username.textContent = `LogIn:${data.login}`;
     
             listItem.appendChild(avatar);
             listItem.appendChild(username);
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
             repos.className = 'userRepos';
             
             const repositories = document.createElement('span');
-            repositories.textContent = `Repositories:${data.repos_url}`;
+            repositories.textContent = `Repositories:${data.public_repos}`;
          
     
             repos.appendChild(repositories);
